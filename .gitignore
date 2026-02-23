@@ -1,0 +1,6 @@
+# Optional: ignore if you add tooling later
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store

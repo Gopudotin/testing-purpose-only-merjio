@@ -4,6 +4,19 @@ Use this to get a **test URL** (e.g. `something.vercel.app`) — not a Merjio-br
 
 ---
 
+## Run locally (avoid 404 for /images/...)
+
+**You must serve from inside the `web` folder**, not from the project root. Otherwise `/images/hero-bg.png` becomes `localhost:3000/images/...` but the file is under `web/images/`, so you get 404.
+
+```bash
+cd "c:\Users\Lanware\Desktop\lanware\Merjio-website AI\web"
+npx serve .
+```
+
+Then open **http://localhost:3000/** (not `http://localhost:3000/web/`). The app and all images will load.
+
+---
+
 ## 1. Push the project to GitHub
 
 ### 1.1 Initialize Git (if not already)
